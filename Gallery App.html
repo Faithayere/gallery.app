@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>GALLERY APPLICATION</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <!--class="container allow the images aling there selfs and leave a margin space at both end of the images" image fluid is to make the images responsive, while rounded circle is to make the images shape round-->
+        <div class="container">
+            <span><img onClick="displayImage(this)"src="images/mainbk.jpg" class="img-thumbnail rounded-circle img-fluid"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk2.jpg" class="img-thumbnail rounded-circle img-fluid"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk3.jpg" class="img-thumbnail rounded-circle img-fluid"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk4.jpg" class="img-thumbnail rounded-circle img-fluid"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk5.jpg" class="img-thumbnail rounded-circle img-fluid"width="214px" height="120px"></span>
+        </div>
+        <hr>
+        <center>
+        <img src="" id="display" class="img-thumbnail rounded-circle"width="890px"height="720px" margin-right:"300px">
+        </center>
+        <script type="text/JavaScript">
+        // a function to display the clicked image
+        function displayImage(image){
+            document.getElementById('display').src=image.src;
+        }
+        </script>
+        <!--class="float allow the images align there selfs without leaving any margin space at both end of the image as show above"-->
+        <div class="float">
+            <span><img onClick="displayImage(this)"src="images/mainbk6.jpg" width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk7.jpg" width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk8.jpg" width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk.jpg" class="img-thumbnail"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk2.jpg" class="img-thumbnail"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk3.jpg" class="img-thumbnail"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk4.jpg" class="img-thumbnail"width="214px" height="120px"></span>
+            <span><img onClick="displayImage(this)"src="images/mainbk5.jpg" class="img-thumbnail"width="214px" height="120px"></span>
+
+        </div>
+        <hr>
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
